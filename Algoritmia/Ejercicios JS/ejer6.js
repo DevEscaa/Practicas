@@ -8,7 +8,7 @@ function sumar (){
     texto = document.getElementById("resultexto").textContent
     document.getElementById("resultexto").textContent=texto+suma
 }
-
+//
 function calcular(){
     compra = parseInt(document.getElementById("compra").value)
     iva = parseFloat(document.getElementById("iva").value)
