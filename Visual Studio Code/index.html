@@ -81,70 +81,205 @@
             <br>
             <p>Una tortilla de patatas lleva 200 gramos de patatas por persona. Por cada kilo de patatas se necesitan 5 huevos y 300 gramos de cebolla.
                 Escribe un script que dado el número de comensales calcule las cantidades de ingredientes necesarias.</p>
+            <label for="">Comensales</label>
+            <input type="text" id="comensales" placeholder="Numero de comensales">
+            <button onclick="tortilla()">Calcular</button>
+            <br>
+            <input type="text" id="patatas" placeholder="Patatas (g)" readonly>
+            <input type="text" id="huevos"  placeholder="Huevos" readonly>
+            <input type="text" id="cebolla" placeholder="Cebolla  (g)" readonly>
+            <div>
+                <h1 id="patatas1">Patatas: </h1>
+                <h1 id="huevos1">Huevos: </h1>
+                <h1 id="cebolla1">Cebolla: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 5</h3>
             <br>
             <p>Juego de adivinar el numero entre 0 y 100, al final debe mostrar el numero de intentos y los números ingresados, 
                 el usuario tiene un máximo de 15 intentos los cuales se deben mostrar en cuenta regresiva; adicional dar pistas si el numero ingresado es mayor o menor al que se debe adivinar.</p>
-        </div>
+            <label for="">Numero:  </label>
+            <input type="text"  id="numero5"  placeholder="Ingresa un numero">
+            <button onclick="adivinar()">Adivinar</button>
+            <button  onclick="iniciarJuego()">Nuevo Juego</button>
+            <br>
+            <input type="text" id="pista" placeholder="Pista" readonly>
+            <div>
+                <h1 id="intentos1">Intentos: </h1>\
+                <h1 id="numeros1">Numeros ingresados</h1>
+            </div>
+            </div>
+
         <div class="espacio">
             <h3>Ejercicio 6</h3>
             <br>
             <p>Serie Fibonacci donde el usuario decide el numero de secuencias a mostrar.
             </p>
+            <label for="">Cantidad de números: </label>
+            <input type="text" id="cantidad" placeholder="Ej: 10">
+            <button onclick="fibonacci()">Generar</button>
+            <br>
+            <div>
+                <h1 id="resultado6">Serie: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 7</h3>
             <br>
             <p>Realizar programa; Introducción de 2 números y el ordenador indica cual es
             el mayor o si son iguales.</p>
+            <label>Número 1: </label>
+            <input type="text" id="num7a" placeholder="Primer número">
+            <br>
+            <label>Número 2: </label>
+            <input type="text" id="num7b" placeholder="Segundo número">
+            <br><br>
+            <button onclick="mayor()">Comparar</button>
+            <br>
+            <div>
+                <h1 id="resultado7">Resultado: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 8</h3>
             <br>
             <p>Realizar programa que calcule el factorial de un número entero no negativo ingresado por el usuario.</p>
+            <label>Número: </label>
+            <input type="text" id="num8" placeholder="Ej: 5">
+            <button onclick="factorial()">Calcular</button>
+            <br>
+            <div>
+                <h1 id="resultado8">Factorial: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 9</h3>
             <br>
             <p>Escribe un programa que solicite al usuario dos números y luego muestre todos los números múltiplos de 6 que hay entre esos dos números, incluyendo los extremos.
             </p>
+            <label>Número 1: </label>
+            <input type="text" id="num9a" placeholder="Número menor">
+            <br>
+            <label>Número 2: </label>
+            <input type="text" id="num9b" placeholder="Número mayor">
+            <br>
+            <button onclick="multiplosSeis()">Calcular</button>
+            <br>
+            <div>
+                <h1 id="resultado9">Múltiplos de 6: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 10</h3>
             <br>
             <p>Crear un programa que genere un arreglo con 20 números entre 0 y 100, muestre este arreglo y luego cree 2 arreglos adiciones donde se separan pares de impares.</p>
+            <button onclick="arreglo10()">Generar</button>
+            <br>
+            <div>
+                <h1 id="todos10">Todos: </h1>
+                <h1 id="pares10">Pares: </h1>
+                <h1 id="impares10">Impares: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 11</h3>
             <br>
             <p>Crear un programa que genere un arreglo con 10 números entre 10 y 20, lo muestre y luego elimine los múltiplos 3 mostrando como quedaría el arreglo modificado.</p>
+            <button onclick="arreglo11()">Generar</button>
+            <br>
+            <div>
+                <h1 id="original11">Arreglo original: </h1>
+                <h1 id="modificado11">Sin múltiplos de 3: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 12</h3>
             <br>
             <p>dados los 3 lados de un triangulo estimar su área, y determinar si es equilátero, isósceles o escaleno.
             </p>
+            <label>Lado A: </label>
+            <input type="text" id="ladoA" placeholder="Lado A">
+            <br>
+            <label>Lado B: </label>
+            <input type="text" id="ladoB" placeholder="Lado B">
+            <br>
+            <label>Lado C: </label>
+            <input type="text" id="ladoC" placeholder="Lado C">
+            <br>
+            <button onclick="triangulo()">Calcular</button>
+            <br>
+            <div>
+                <h1 id="area12">Área: </h1>
+                <h1 id="tipo12">Tipo: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 13</h3>
             <br>
             <p>Crear un arreglo con n palabras, generar un nuevo arreglo con la cantidad de caracteres de cada palabra y por ultimo determinar de cuantos caracteres seria la oración con estas palabras.
             </p>
+            <label>¿Cuántas palabras?: </label>
+            <input type="text" id="cantPalabras" placeholder="Ej: 4">
+            <button onclick="prepararPalabras()">Preparar</button>
+            <br>
+            <div id="inputsPalabras"></div>
+            <br>
+            <button id="btnCalcular" onclick="calcularPalabras()" 
+            style="display:none">Calcular</button>
+            <br>
+            <div>
+                <h1 id="palabras13">Palabras: </h1>
+                <h1 id="caracteres13">Caracteres por palabra: </h1>
+                <h1 id="total13">Total caracteres oración: </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 14</h3>
             <br>
             <p>Generar un arreglo con 10 números, generar 2 nuevos arreglos, con uno invertir su contenido de manera algorítmica y el otro con el uso de la función (reverse)
             </p>
+            <button onclick="invertir()">Generar e Invertir</button>
+            <br>
+            <div>
+                <h1 id="original14">Original: </h1>
+                <h1 id="algoritmo14">Invertido (FOR): </h1>
+                <h1 id="reverse14">Invertido (.reverse()): </h1>
+            </div>
         </div>
+
         <div class="espacio">
             <h3>Ejercicio 15</h3>
             <br>
             <p>Realizar calculadora básica, donde el usuario decide la operación a realizar mediante input type radio</p>
-        </div>
-    <div>
+            <label>Número 1: </label>
+            <input type="text" id="calc1" placeholder="Primer número">
+            <br><br>
+            <label>Número 2: </label>
+            <input type="text" id="calc2" placeholder="Segundo número">
+            <br><br>
+            <input type="radio" name="operacion" value="suma"> Suma <br>
+            <input type="radio" name="operacion" value="resta"> Resta <br>
+            <input type="radio" name="operacion" value="multiplicacion"> Multiplicación <br>
+            <input type="radio" name="operacion" value="division"> División <br>
+            <br>
+            <button onclick="calcular15()">Calcular</button>
+            <br><br>
+            <div>
+                <h1 id="resultado15">Resultado: </h1>
+            </div>
+                </div>
+            <div>
+
 </body>
-<script src="/Algoritmia/Ejercicios JS/ejer6.js"></script>
+<script src="/Practicas/Algoritmia/Ejercicios JS/funciones2.js"></script>
 </html>
