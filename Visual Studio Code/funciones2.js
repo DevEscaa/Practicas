@@ -204,11 +204,12 @@ function arreglo11(){
     }
     document.getElementById("original11").textContent ="Arreglo original: " + numeros
 
-    let sinMultiplos = numeros.filter(function(num){
-        return num % 3 !== 0
-    })
+    for(i= numeros.length -1; i >= 0; i--){
+        if(numeros[i] % 3 == 0)
+            numeros.splice(i,1)
+    }
 
-    document.getElementById("modificado11").textContent = "Sin múltiplos de 3: " + sinMultiplos
+    document.getElementById("modificado11").textContent = "Sin múltiplos de 3: " + numeros
 }
 //Ejercicio 12
 function triangulo(){

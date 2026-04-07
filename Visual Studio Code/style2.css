@@ -19,7 +19,7 @@ body{
 }
 
 .espacio{
-    height: 300px;
+    height: auto;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     background-color: rgba(241, 211, 147, 0.993);
