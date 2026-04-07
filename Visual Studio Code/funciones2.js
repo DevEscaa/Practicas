@@ -234,7 +234,7 @@ function triangulo(){
     }
     document.getElementById("area12").textContent ="Área: " + area.toFixed(2)
     document.getElementById("tipo12").textContent ="Tipo: " + tipo
-
+}
 //Ejercicio 13
 function prepararPalabras(){
     let cantidad = parseInt(document.getElementById("cantPalabras").value)
@@ -322,4 +322,5 @@ function calcular15(){
         resultado = num1 / num2
         document.getElementById("resultado15").textContent =num1 + " ÷ " + num2 + " = " + resultado.toFixed(2)
     }
-}}
+}
+
