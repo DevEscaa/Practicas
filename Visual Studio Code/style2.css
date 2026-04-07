@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(253, 218, 153);
+    background-color: rgb(40, 97, 35);
 }
 
 #container{
@@ -12,14 +12,17 @@ body{
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
     width: 90%;
-    background-color: rgb(231, 222, 222);
+    background-color: rgb(40, 97, 35);
     margin-left: auto;
     margin-right:auto;
+    border-radius: 10px ;
 }
 
 .espacio{
     height: 300px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(241, 211, 147, 0.993);
 }
 
 header{
@@ -28,4 +31,5 @@ header{
     justify-content: center;
     height: 80px;
     align-items: center;
+    border-radius: 10px ;
 }
